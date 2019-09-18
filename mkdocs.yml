@@ -1,0 +1,46 @@
+# Project information
+site_name: 'Test plans'
+site_description: 'Test plans Edward has'
+site_author: 'Edward Shen'
+site_url: ''
+
+# Navigators
+nav:
+    - varlink: 'varlink.md'
+
+
+# Repository
+repo_name: 'edward5hen/test-plans'
+repo_url: 'https://github.com/Edward5hen/test-plans'
+
+# Copyright
+copyright: 'Copyright &copy; 2018 Edward Shen'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.superfences:
+      preserve_tabs: true
+      custom_fences:
+        - name: flow
+          class: uml-flowchart
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: sequence
+          class: uml-sequence-diagram
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
